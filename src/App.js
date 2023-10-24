@@ -1,24 +1,31 @@
 import logo from './logo.svg';
 import './App.css';
+import { useState } from 'react';
 
 function App() {
+  
+  const searchBar = () => {}
+  const [searchInput, setSearchInput] = useState("");
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <header className='header'>
+      <div className='container'>
+        <div className='header__inner'>
+          <div className='header__logo'>Anime quotes</div>
+
+          <nav className='nav'>
+            <a href='https://vk.com/maturboi' className='navlink'><div className='text'>VK</div></a>
+            <a href='https://steamcommunity.com/id/MATURBOII/' className='navlink'><div className='text'>Steam</div></a>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <div className='intro'>
+      <div className='container'>
+        <h1 style={{ textalign: "center" }}></h1>
+      </div>
+     </div> 
+    </>
   );
 }
 
